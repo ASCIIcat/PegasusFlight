@@ -1,0 +1,7 @@
+# The decay rate is set in decay per second.
+# The minimum food is set in halves of a piece of food
+
+#Hunger removed per second.
+HungerDecayRate: 5 //Set to 0 for no flying punishment.
+#Least hunger permitted for flying
+MinFoodForFly: 6 //Set at -1 for no minimum

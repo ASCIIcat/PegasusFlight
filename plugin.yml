@@ -1,0 +1,28 @@
+name: Pegasus Flight
+main: tk.ponyconcordia.flight.PegasusFlight
+version: 1.6
+author: ASCIIcat
+website: http://ponyconcordia.tk/
+softdepend: [AntiCheat]
+description: Flight for the Pegasi of Pony Concordia
+commands:
+    pegaflightReload:
+        description: Reloads the airline food configuration file
+        usage: /pegaflightreload
+        permission: fegasusflight.config.reload
+        permission-message: You do not have permission to reload the configs.
+    pegaflightDecay:
+        description: Sets the amount of food that is removed per second.
+        usage: /pegaflightDecay <decay value>
+        permission: fegasusflight.config.decay
+        permission-message: You do not have permission to set the decay.
+    pegaflightFoodMin:
+        description: Sets the minimum amount of food that the player may have and still fly.
+        usage: /pegaflightFoodMin <food minimum>
+        permission: fegasusflight.config.foodmin
+        permission-message: You do not have permission to set the minimum food.
+
+permissions:
+    pegasusflight.fly:
+        description: Allows you to fly
+        default: false
